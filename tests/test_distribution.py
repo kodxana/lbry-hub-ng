@@ -22,6 +22,7 @@ def test_binding_requirement_uses_the_python313_release():
 
 
 def test_only_maintained_binding_is_installed():
-    assert version('lbry-rocksdb-ng') == '0.8.3'
+    # CI covers both the published wheel and the patched 0.8.4 candidate.
+    assert version('lbry-rocksdb-ng') in ('0.8.3', '0.8.4')
     with pytest.raises(PackageNotFoundError):
         version('lbry-rocksdb')
