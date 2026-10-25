@@ -133,21 +133,21 @@ exit. Both runners preserve nonzero test exits.
 
 ## Compare the maintained RocksDB binding
 
-By default both runners install the hash-pinned `lbry-rocksdb-ng` 0.8.3 wheel
-from [the GitHub release](https://github.com/kodxana/lbry-rocksdb-ng/releases/tag/v0.8.3).
+By default both runners install the hash-pinned `lbry-rocksdb-ng` 0.8.4 wheel
+from [the GitHub release](https://github.com/kodxana/lbry-rocksdb-ng/releases/tag/v0.8.4).
 To test a
 locally built Linux CPython 3.13 wheel, pass its path:
 
 ```sh
-sh scripts/test.sh /path/to/lbry_rocksdb_ng-0.8.3-cp313-cp313-manylinux_2_35_x86_64.whl
-sh scripts/test-integration.sh .ci/sdk /path/to/lbry_rocksdb_ng-0.8.3-cp313-cp313-manylinux_2_35_x86_64.whl
+sh scripts/test.sh /path/to/lbry_rocksdb_ng-0.8.4-cp313-cp313-manylinux_2_35_x86_64.whl
+sh scripts/test-integration.sh .ci/sdk /path/to/lbry_rocksdb_ng-0.8.4-cp313-cp313-manylinux_2_35_x86_64.whl
 ```
 
 Results use the `local-wheel` suffix and record the supplied wheel's SHA-256.
 Installation is offline and does not replace other dependencies.
 
 CI runs both suites with the published release and a binding rebuilt from
-[`kodxana/lbry-rocksdb-ng` at `cdbe008312a191b3099065a94c470818b10d6d9d`](https://github.com/kodxana/lbry-rocksdb-ng/commit/cdbe008312a191b3099065a94c470818b10d6d9d),
+[`kodxana/lbry-rocksdb-ng` at `a82b56c45e918a51b4d7d75891b1b8c4e7d16c91`](https://github.com/kodxana/lbry-rocksdb-ng/commit/a82b56c45e918a51b4d7d75891b1b8c4e7d16c91),
 which releases live iterators and snapshots safely when a database closes.
 That checkout builds its pinned native libraries and passes its binding suite
 before the wheel reaches the Hub database job. The resolve job downloads and

@@ -4,7 +4,7 @@ aiohttp==3.14.4
 asn1crypto==1.5.1
 aiosignal==1.4.0
 attrs==26.1.0
-certifi==2026.7.22
+certifi==2026.10.19
 cffi==2.1.1
 coincurve==21.0.0
 colorama==0.4.6
@@ -28,11 +28,11 @@ protobuf==7.36.2
 pycparser==3.11
 pygments==2.21.0
 pytest==9.1.1
-setuptools==84.0.0
+setuptools==84.1.0
 sha256==1.0
 typing-extensions==4.16.0
 ujson==6.0.0
 urllib3==2.8.0
 wheel==0.48.0
 yarl==1.25.1
-lbry-rocksdb-ng @ https://github.com/kodxana/lbry-rocksdb-ng/releases/download/v0.8.3/lbry_rocksdb_ng-0.8.3-cp313-cp313-manylinux_2_35_x86_64.whl#sha256=9e905f44895e0815ef6e803da964ee648cfd970cc2621003a92bc822875e3e72
+lbry-rocksdb-ng @ https://github.com/kodxana/lbry-rocksdb-ng/releases/download/v0.8.4/lbry_rocksdb_ng-0.8.4-cp313-cp313-manylinux_2_35_x86_64.whl#sha256=48347ec4d6d4a62690ae9df99a81c0e953da0e5e00d40bcb093efe3dc5b3b652

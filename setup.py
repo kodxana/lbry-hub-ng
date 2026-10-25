@@ -31,7 +31,7 @@ setup(
     install_requires=[
         'aiohttp==3.14.4',
         'asn1crypto==1.5.1',
-        'certifi==2026.7.22',
+        'certifi==2026.10.19',
         'colorama==0.4.6',
         'cffi==2.1.1',
         'protobuf==7.36.2',
@@ -44,9 +44,9 @@ setup(
         'hachoir==3.4.0',
         'filetype==1.2.0',
         'grpcio==1.84.0',
-        'lbry-rocksdb-ng @ https://github.com/kodxana/lbry-rocksdb-ng/releases/download/v0.8.3/'
-        'lbry_rocksdb_ng-0.8.3-cp313-cp313-manylinux_2_35_x86_64.whl'
-        '#sha256=9e905f44895e0815ef6e803da964ee648cfd970cc2621003a92bc822875e3e72',
+        'lbry-rocksdb-ng @ https://github.com/kodxana/lbry-rocksdb-ng/releases/download/v0.8.4/'
+        'lbry_rocksdb_ng-0.8.4-cp313-cp313-manylinux_2_35_x86_64.whl'
+        '#sha256=48347ec4d6d4a62690ae9df99a81c0e953da0e5e00d40bcb093efe3dc5b3b652',
         'ujson==6.0.0',
         'sha256==1.0'
     ],
