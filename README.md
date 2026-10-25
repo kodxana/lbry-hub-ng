@@ -22,7 +22,7 @@ Features and overview of `hub` as a python library:
 
 Build this fork from source or build your own Docker image as described below. Community releases belong on [this repository's releases page](https://github.com/kodxana/lbry-hub-ng/releases). Historical [upstream binaries](https://github.com/lbryio/hub/releases) and [lbry/hub Docker images](https://hub.docker.com/r/lbry/hub/tags) do not include this fork's fixes.
 
-On Linux x86-64 with CPython 3.13, this fork installs `lbry-rocksdb-ng` 0.8.3
+On Linux x86-64 with CPython 3.13, this fork installs `lbry-rocksdb-ng` 0.8.4
 from a versioned GitHub release with a SHA-256 pin. The wheel requires
 `manylinux_2_35` compatibility (including glibc 2.35 or newer). Alpine/musl,
 other architectures and other Python versions are not supported by this build.

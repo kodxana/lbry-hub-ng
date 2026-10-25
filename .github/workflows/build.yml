@@ -68,7 +68,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: kodxana/lbry-rocksdb-ng
-          ref: a30021843b38cb3105925b0f1375381801ba0303
+          ref: a82b56c45e918a51b4d7d75891b1b8c4e7d16c91
           path: .ci/rocksdb
           submodules: true
           persist-credentials: false

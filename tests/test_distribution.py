@@ -11,9 +11,9 @@ def test_binding_requirement_uses_the_python313_release():
     binding = bindings[0]
     assert binding.name == 'lbry-rocksdb-ng'
     assert binding.url == (
-        'https://github.com/kodxana/lbry-rocksdb-ng/releases/download/v0.8.3/'
-        'lbry_rocksdb_ng-0.8.3-cp313-cp313-manylinux_2_35_x86_64.whl'
-        '#sha256=9e905f44895e0815ef6e803da964ee648cfd970cc2621003a92bc822875e3e72'
+        'https://github.com/kodxana/lbry-rocksdb-ng/releases/download/v0.8.4/'
+        'lbry_rocksdb_ng-0.8.4-cp313-cp313-manylinux_2_35_x86_64.whl'
+        '#sha256=48347ec4d6d4a62690ae9df99a81c0e953da0e5e00d40bcb093efe3dc5b3b652'
     )
     supported = SpecifierSet(metadata('hub')['Requires-Python'])
     assert '3.13' in supported
@@ -22,7 +22,6 @@ def test_binding_requirement_uses_the_python313_release():
 
 
 def test_only_maintained_binding_is_installed():
-    # CI covers both the published wheel and the patched 0.8.4 candidate.
-    assert version('lbry-rocksdb-ng') in ('0.8.3', '0.8.4')
+    assert version('lbry-rocksdb-ng') == '0.8.4'
     with pytest.raises(PackageNotFoundError):
         version('lbry-rocksdb')
