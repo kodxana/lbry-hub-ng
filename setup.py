@@ -31,7 +31,7 @@ setup(
     install_requires=[
         'aiohttp==3.14.4',
         'asn1crypto==1.5.1',
-        'certifi==2026.7.22',
+        'certifi==2026.10.19',
         'colorama==0.4.6',
         'cffi==2.1.1',
         'protobuf==7.36.2',
